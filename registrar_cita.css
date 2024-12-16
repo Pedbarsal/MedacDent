@@ -1,0 +1,196 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    background-color: #EEEEEE;
+    color: #201E43;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecera */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #508C9B;
+    color: #EEEEEE;
+    padding: 20px;
+    box-shadow: 0 4px 2px -2px grey;
+    height: 150px;
+}
+
+header img {
+    max-height: 60px;
+    width: auto;
+}
+
+/* Formulario */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #EEEEEE;
+    color: #201E43;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px grey;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+form label {
+    font-weight: bold;
+    color: #201E43;
+}
+
+form h2 {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 0;
+    color: #201E43;
+}
+
+form input {
+    background-color: #EEEEEE;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #201E43;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #201E43;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+input:focus,
+textarea:focus {
+    border-color: #201E43;
+    outline: none;
+}
+
+form button {
+    grid-column: span 2;
+    padding: 10px 15px;
+    background-color: #508C9B;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #134B70;
+}
+
+/* Botones */
+.a-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.a-group .btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #508C9B;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.a-group .btn:hover {
+    background-color: #134B70;
+}
+
+/*  Pie de página */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #201E43;
+    color: #EEEEEE;
+    padding: 20px;
+    height: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Errores */
+.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+input.error,
+textarea.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+/* Diseño responsive */
+@media (max-width: 480px) {
+    .form-group {
+        grid-column: 2 span;
+    }
+
+    .a-group {
+        grid-template-columns: 1fr;
+        max-width: 95%;
+        gap: 10px;
+    }
+
+    main img {
+        max-width: 95%;
+    }
+
+    .a-group {
+        grid-template-columns: 1fr;
+        max-width: 95%;
+        gap: 10px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 10px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+
+
+
+/* 
+Paleta de colores usada
+https://colorhunt.co/palette/201e43134b70508c9beeeeee
+*/

@@ -1,0 +1,83 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #508C9B;
+    color: #201E43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+/* Logo */
+main img {
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 0;
+}
+
+main h1 {
+    color: #EEEEEE;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+/* Botones */
+.a-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.a-group .btn {
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #EEEEEE;
+    color: #508C9B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.a-group .btn:hover {
+    background-color: #c8c8c8;
+}
+
+/* Diseño responsive */
+@media(max-width: 768px) {
+    main img {
+        max-width: 80%;
+    }
+
+    .a-group {
+        grid-template-columns: 1fr;
+        gap: 15;
+    }
+
+    .a-group .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    main img {
+        max-width: 95%;
+    }
+
+    .a-group {
+        max-width: 95%;
+        gap: 10px;
+    }
+}

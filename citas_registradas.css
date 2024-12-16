@@ -1,0 +1,153 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEEEEE;
+    color: #201E43;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Cabecera */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #508C9B;
+    color: #EEEEEE;
+    padding: 20px;
+    box-shadow: 0 4px 2px -2px #134B70;
+    height: 150px;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+/* Cuerpo principal */
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+    color: #201E43;
+    padding: auto;
+    margin-top: 25px;
+}
+
+/* Tabla */
+.tabla-citas {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th,
+table td {
+    border: 1px solid #201E43;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #508C9B;
+    color: #EEEEEE;
+    font-weight: bold;
+}
+
+table button {
+    margin: 2px auto;
+    background-color: #508C9B;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+table button:hover {
+    background-color: #134B70;
+}
+
+#fila-vacia {
+    text-align: center;
+    color: gray;
+}
+
+/* Botones */
+.a-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.a-group .btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #508C9B;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.a-group .btn:hover {
+    background-color: #134B70;
+}
+
+/* Pie de página */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #201E43;
+    color: #EEEEEE;
+    padding: 20px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+/* Diseño responsive */
+@media (max-width: 480px) {
+    main img {
+        max-width: 95%;
+    }
+
+    .a-group {
+        grid-template-columns: 1fr;
+        max-width: 95%;
+        gap: 10px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 10px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}

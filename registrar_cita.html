@@ -1,0 +1,92 @@
+<!-- Registro de citas -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedacDent - Registrar nueva cita</title>
+    <link rel="stylesheet" href="registrar_cita.css">
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        <img src="logo.png" alt="Logo MedacDent">
+        <h1>Registrar nueva cita</h1>
+    </header>
+
+    <!-- Formulario de registro -->
+    <main>
+        <!-- Formulario: -->
+        <form id="formulario">
+            <h2>Formulario de registro</h2>
+            <!-- Fecha (día, mes, año, hora, minuto) -->
+            <div class="form-group">
+                <label for="fecha_hora">Fecha:</label>
+                <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
+                <span class="error-message" id="error-fecha_hora"></span>
+            </div>
+
+            <!-- Nombre -->
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <span class="error-message" id="error-nombre"></span>
+            </div>
+
+            <!-- Apellidos -->
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" required>
+                <span class="error-message" id="error-apellidos"></span>
+            </div>
+
+            <!-- DNI -->
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="text" name="dni" id="dni" required pattern="^[0-9]{8}[A-Za-z]$">
+                <span class="error-message" id="error-dni"></span>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" required>
+                <span class="error-message" id="error-telefono"></span>
+            </div>
+
+            <!-- Fecha de nacimiento -->
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+                <span class="error-message" id="error-fecha_nacimiento"></span>
+            </div>
+
+            <!-- Observaciones -->
+            <div class="form-group full-width">
+                <label for="observaciones">Observaciones:</label>
+                <textarea name="observaciones" id="observaciones"></textarea>
+                <span class="error-message" id="error-observaciones"></span>
+            </div>
+
+            <button type="submit">Registrar cita</button>
+        </form>
+
+        <div class="a-group">
+            <!-- Botón de acceso a la página de inicio -->
+            <a href="index.html" class="btn">Volver al inicio</a>
+            <!-- Botón de acceso a la lista de las citas registradas -->
+            <a href="citas_registradas.html" class="btn">Comprobar citas</a>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Contacto: medacdent@gmail.com | Teléfono: 955 544 700</p>
+    </footer>
+
+    <script src="registrar_cita.js"></script>
+</body>
+
+</html>

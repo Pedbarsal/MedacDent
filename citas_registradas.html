@@ -1,0 +1,63 @@
+<!-- Citas Registradas -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedacDent - Citas registradas</title>
+    <link rel="stylesheet" href="citas_registradas.css">
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        <img src="logo.png" alt="Logo MedacDent">
+        <h1>Citas registradas</h1>
+    </header>
+
+    <!-- Tabla de citas registradas -->
+    <main>
+        <h2>Listado de citas registradas</h2>
+        <div class="tabla-citas"> 
+            <table id="tabla_citas">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Fecha y Hora</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>DNI</th>
+                        <th>Teléfono</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Observaciones</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se insertarán las filas de citas -->
+                    <tr id="fila-vacia" style="display: none;">
+                        <td colspan="9">No hay citas registradas.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Botones -->
+        <div class="a-group">
+            <!-- Botón de acceso a la página de inicio -->
+            <a href="index.html" class="btn">Volver al inicio</a>
+            <!-- Botón de acceso a la lista de las citas registradas -->
+            <a href="registrar_cita.html" class="btn">Registrar cita</a>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Contacto: medacdent@gmail.com | Teléfono: 955 544 700</p>
+    </footer>
+
+    <script src="citas_registradas.js"></script>
+</body>
+
+</html>
