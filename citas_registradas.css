@@ -125,7 +125,7 @@ footer {
     color: #EEEEEE;
     padding: 20px;
     height: auto;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
